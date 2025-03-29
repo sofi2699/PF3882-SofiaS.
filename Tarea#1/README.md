@@ -24,8 +24,7 @@ El usuario podrá gestionar su cuenta, agregar más de un vehículo y consultar 
 
 ## Contextos delimitados y Diagrama
 
-Aqui podra ver los contextos y ademas la interacción entre ellos [aquí](https://lucid.app/lucidchart/ef115092-e5e6-4c64-8597-f755cbcff0db/view).
-
+[Aqui](https://lucid.app/lucidchart/ef115092-e5e6-4c64-8597-f755cbcff0db/view) podra ver los contextos delimitados y ademas la interacción entre ellos. 
 
 ## Justificación
 Esta división se realizó pensando en la escalabilidad del sistema. Se pueden incorporar otros microservicios, como métodos de pago y mensajería. Además, sería posible agregar más sucursales en caso de expansión. Por otro lado, al tratarse de microservicios, las actualizaciones pueden realizarse de manera independiente. 
