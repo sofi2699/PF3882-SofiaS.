@@ -1,0 +1,23 @@
+services:
+  pagos:
+    build: ./pagos
+    ports:
+      - "5005:5005"
+    depends_on:
+      - rabbitmq
+
+  consumidor-pruebas:
+    build: ./reservas
+    volumes:
+      - ./reservas/pacts:/app/pacts
+    depends_on:
+      - pagos
+
+  rabbitmq:
+    image: rabbitmq:3-management
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+    environment:
+      RABBITMQ_DEFAULT_USER: user
+      RABBITMQ_DEFAULT_PASS: password
